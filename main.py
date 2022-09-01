@@ -1,5 +1,5 @@
 import inspect
-from dataclasses import dataclass
+from dataclasses import dataclass, astuple, asdict
 
 @dataclass(order=True)
 class Comment:
@@ -11,7 +11,7 @@ def main():
     print(comment)
     # print(astuple(comment))
     # print(asdict(comment))
-    #pprint(inspect.getmembers(comment, inspect.isfunction))
+    print(inspect.getmembers(comment, inspect.isfunction))
 
 if __name__ == "__main__":
     main()
