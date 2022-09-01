@@ -15,4 +15,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    comment.id = 3
+    Comment.id = 3
